@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/perfiljs.js"></script>
+    <link rel="stylesheet" href="css/perfilcss.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="caja-fixed">
+        <div class="barraTopIndex"><a href="index.html"><img src="css/imagenes/logoblancovertical.png""></a></div>
+        <div class="barraTopCalifica"><a href="califica.html"><img src="css/imagenes/comunidad.png"></a></div>
+        <div class="barraTopExperiencia"><a href="experiencia.html"><img src="css/imagenes/miexperiencia.png"></a></div>
+        <div class="barraTopPerfil"><a href="perfil.html"><img src="css/imagenes/miperfil.png"></a></div>
+        <a href="logueo.html"><span class="icon-list2"></span>Logueo</a>
+        
+    </header>
+    <div class="editarPerfil">
+        <h2>Perfil de usuario </h2>
+    
+    <form action= "javascript:guardarInformacionCabin()">
+        <label>Cédula:</label>
+        <input class="cabinInput1"type="text" id="Oname" placeholder="nombre" required><br></br>
+
+        <label>Nombre:</label>
+        <input class="cabinInput2"type="text" id="Obrand" placeholder="marca" required><br></br>
+
+        <label>Edad:</label>
+        <input class="cabinInput3"type="number" id="Orooms" placeholder="habitación" required><br></br>
+
+        <label>Género:</label>
+        <input class="cabinInput4"type="text" id="Odescription" placeholder="descripcion" required><br></br>
+
+        <label>Teléfono:</label>
+        <select class="cabinInput5"id="select-category" required></select><br></br>
+
+        <label>Email:</label>
+        <input class="cabinInput2"type="text" id="Obrand" placeholder="marca" required><br></br>
+
+        <label>Ciudad:</label>
+        <input class="cabinInput3"type="number" id="Orooms" placeholder="habitación" required><br></br>
+
+        <label>Contraseña:</label>
+        <input class="cabinInput4"type="text" id="Odescription" placeholder="descripcion" required><br></br>
+
+        <input class="cabinBoton1"type="submit" value="Guardar">
+    </form>
+    
+    </div>
+    
+    <div class="resultadoCabin">
+        <p class="cosqui"> Consulta</p>
+        <p class="cosqui"> de cabañas</p>
+        <div id="resultado2"></div>
+        <script type="text/javascript">
+            window.onload = autoInicioCabin();
+        </script>
+    </div>
+    
+</body>
+</html>

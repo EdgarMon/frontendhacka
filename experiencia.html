@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/experienciajs.js"></script>
+    <link rel="stylesheet" href="css/experienciacss.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="caja-fixed">
+        <div class="barraTopIndex"><a href="index.html"><img src="css/imagenes/logoblancovertical.png"></a></div>
+        <div class="barraTopCalifica"><a href="califica.html"><img src="css/imagenes/comunidad.png"></a></div>
+        <div class="barraTopExperiencia"><a href="experiencia.html"><img src="css/imagenes/miexperiencia.png"></a></div>
+        <div class="barraTopPerfil"><a href="perfil.html"><img src="css/imagenes/miperfil.png"></a></div>
+
+    </header>
+    
+    <div class="formularioCategoria">
+        <div class="container">
+            <span id="rateMe1"></span>
+          </div>
+          
+          <!-- rating.js file -->
+          <script src="js/addons/rating.js"></script>>
+        <h2>Nueva Calificación </h2>
+
+        <form action= "javascript:guardarInformacionCategorias()">
+            <div class="localizacion">
+                <img src="css/imagenes/iconolocalizacion.png">
+                <label class="catelabel1">Ubicación:</label>
+                <input class="cateInput1" type="text" id="ubicacion" placeholder="Cll #-# Cr #" required>
+                <label class="catelabel2">Usuario:</label>
+                <input class="cateInput2" type="text" id="usuario" placeholder="Nombre" required><br></br>
+
+                <label class="catelabel3">Destino:</label>
+                <input class="cateInput3" type="text" id="destino" placeholder="Cll #-# Cr #" required>
+                <label class="catelabel4">Ciudad:</label>
+                <input class="cateInput4" type="text" id="ciudad" placeholder="Ciudad" required><br></br>
+            </div>
+            
+            <div class="tiempo">
+                <img src="css/imagenes/iconotime.png">
+                <label class="catelabel5">Tiempo:</label>
+                <input class="cateInput5" type="text" id="tiempo" placeholder="00:00" required>
+        
+                <label class="catelabel6">Tiempo estimado:</label>
+                <input class="cateInput6" type="text" id="tiempoestimado" placeholder="00:00" required><br></br>
+
+                <label class="catelabel7">Vehículo:</label>
+                <input class="cateInput7" type="text" id="vehículo" placeholder="nombre" required>
+        
+                <label class="catelabel8">Tipo de transporte:</label>
+                <input class="cateInput8" type="text" id="tipotransporte" placeholder="público/privado" required><br></br>
+            </div>
+
+            <div class="costo">
+                <img src="css/imagenes/iconomony.png"
+                <label class="catelabel9">Costo:</label>
+                <input class="cateInput9" type="number" id="Costo" placeholder="tarifa" required>
+                
+            </div>
+            
+
+            
+            <p class="cosqui"> Ingresa una puntuación</p>
+      
+        </form>
+        <button class="enviarCalificacion" onclick="guardarInformacionCategorias()">Enviar calificación</button>
+    </div>
+    
+    <div class="resultadoCategoria">
+        
+        
+        <div id="resultado1"></div>
+        <script type="text/javascript"> 
+        window.onload = autoInicioCategoria();</script>
+    </div>
+    <div class="imagenCategoria">
+        <img src="css/imagenes/bannercentermap.png" width="100%">
+    </div>
+</body>
+</html>
